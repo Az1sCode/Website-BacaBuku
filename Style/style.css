@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gothic A1";
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #7195D2;
+
+    background-color: #EDF0F6;
+}
+
+header {
+    width: 100%;
+    
+    padding: 1rem 6rem 2rem;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 3rem;
+}
+
+.header-title {
+    font-family: "La Belle Aurore";
+    font-size: 12vh;
+    font-weight: 100;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.form-input {
+    width: 100%;
+
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+}
+
+.input-box {
+    width: 355px;
+    height: 45px;
+
+    padding: 1rem;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #EDF0F6;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 25px;
+
+    font-family: "Gothic A1";
+    font-weight: 600;
+    font-size: 1rem;
+
+    color: white;
+    background-color: #7195D2;
+}
+
+.btn-editData {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    border-radius: 25px;
+
+    font-family: "Gothic A1";
+    font-weight: 600;
+    font-size: 1rem;
+
+    color: white;
+    background-color: #71d281;
+}
+
+.btn-submit:hover {
+    background-color: #334CAF;
+}
+
+main {
+    min-height: 400px;
+
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 1rem;
+}
+
+.container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-book {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.list-item:nth-child(even) {
+    background-color: white;
+}
+
+.books-detail {
+    display: flex;
+
+    margin-top: 0.3rem;
+
+    gap: 1rem;
+}
+
+.btn-uncomplete {
+
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/unread.svg');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.btn-uncomplete:hover {
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/read.svg');
+    background-size: contain;
+}
+
+.btn-completed {
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/read.svg');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.btn-completed:hover {
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/unread.svg');
+    background-size: contain;
+}
+
+.btn-trash {
+
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/trash-stroke.svg');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+
+}
+
+.btn-trash:hover {
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/trash-fill.svg');
+    background-size: contain;
+}
+
+.btn-edit {
+
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/edit-stroke.svg');
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+
+}
+
+.btn-edit:hover {
+    width: 25px;
+    height: 25px;
+
+    background: url('../Asset/edit-fill.svg');
+    background-size: contain;
+}
+
+.empty-books {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+}
+
+@media screen and (max-width: 1292px) {
+    .form-input {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .header-title {
+        font-size: 10vh;
+    }
+    .form {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+    .form-input {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .btn-submit {
+        width: 356px;
+    }
+}
